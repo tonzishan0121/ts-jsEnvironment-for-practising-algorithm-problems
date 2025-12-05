@@ -9,6 +9,6 @@ async function main() {
     solve();
 }
 main()
-    .then((res) => console.log(res))
+    .then(console.log)
     .catch((err)=>console.log(err.message))
     .finally(() => rl.close());
