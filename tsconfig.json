@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      /* 语言基础 */
+      "target": "ES2020",          // 语法降级级别
+      "module": "es6",        // 输出 CommonJS
+      "lib": ["ES2022"],           // 自带类型库
+      "moduleResolution": "node",  // 按 node 规则找包
+      "esModuleInterop": true,     // 兼容 import = require
+      "allowSyntheticDefaultImports": true,
+  
+      /* 严格检查 */
+      "strict": true,              // 一次性打开所有 strict 系列
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+  
+      /* 输出与调试 */
+      "outDir": "./dist",          // 编译产物目录
+      "composite": false,          // 非项目引用
+  
+      /* 最新语法支持 */
+      "resolveJsonModule": true,
+      "skipLibCheck": true         // 忽略 node_modules 里小错误
+    },
+    "include": ["main.ts"],
+    "exclude": ["node_modules", "dist", "utils"],
+    "files": ["./main.ts"]
+  }
